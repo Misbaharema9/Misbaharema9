@@ -324,16 +324,16 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 Support
 For support and questions:
 
-Create an issue in the repository
-Check the documentation
-Review the troubleshooting section
+* Create an issue in the repository
+* Check the documentation
+* Review the troubleshooting section
 
 Changelog
-v1.0.0
-Initial release
-Basic OLT/ONU management
-SNMP monitoring
-Web interface
-Configuration backup
-Alert system
-Performance graphs
+* v1.0.0
+* Initial release
+* Basic OLT/ONU management
+* SNMP monitoring
+* Web interface
+* Configuration backup
+* Alert system
+* Performance graphs
