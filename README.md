@@ -41,19 +41,17 @@ Prerequisites
 Docker and Docker Compose
 Git
 Installation
-Clone the repository
+'''Clone the repository
 bash
 
 Line Wrapping
 
 Collapse
-Copy
-1
-2
-git clone <repository-url>
-cd olt-monitor-system
-Start the application
-bash
+
+  git clone <repository-url>
+  cd olt-monitor-system
+  Start the application
+  bash
 
 Line Wrapping
 
@@ -73,13 +71,7 @@ env
 
 Line Wrapping
 
-Collapse
-Copy
-1
-2
-3
-4
-5
+'''Collapse
 DATABASE_URL=mysql+mysqlconnector://olt_user:olt_password_123@mysql:3306/olt_monitor
 REDIS_URL=redis://redis:6379
 SECRET_KEY=your-secret-key-here-change-in-production
@@ -92,18 +84,7 @@ json
 
 Line Wrapping
 
-Collapse
-Copy
-1
-2
-3
-4
-5
-6
-7
-8
-9
-⌄
+'''Collapse
 {
   "name": "ZTE-C300-01",
   "ip_address": "192.168.1.100",
@@ -113,6 +94,7 @@ Copy
   "ssh_username": "admin",
   "ssh_password": "admin123"
 }
+
 Usage
 Adding OLT Devices
 Navigate to OLT Management
@@ -141,15 +123,7 @@ bash
 
 Line Wrapping
 
-Collapse
-Copy
-1
-2
-3
-4
-5
-6
-# Login
+'''Collapse
 POST /api/auth/login
 {
   "username": "admin",
