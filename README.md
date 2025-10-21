@@ -182,12 +182,11 @@ alembic upgrade head
 </pre>
 
 Supported OLT Models
-
 ZTE C300
-a. Version: v2.1, v2.2, v3.0
-b. PON Types: GPON, EPON
-c. Max PON Ports: 16
-d. Max ONUs per PON: 128
+Version: v2.1, v2.2, v3.0
+PON Types: GPON, EPON
+Max PON Ports: 16
+Max ONUs per PON: 128
 ZTE C320
 Version: v3.0, v3.1, v3.2
 PON Types: GPON, XG-PON
@@ -252,20 +251,7 @@ Check database connections
 Review monitoring intervals
 Scale resources if needed
 Logs
-bash
-
-Line Wrapping
-
-Collapse
-Copy
-1
-2
-3
-4
-5
-6
-7
-8
+<pre>
 # Application logs
 docker-compose logs -f backend
 
@@ -274,12 +260,16 @@ docker-compose logs -f mysql
 
 # Nginx logs
 docker-compose logs -f nginx
+</pre>
+
+
 Contributing
-Fork the repository
-Create a feature branch
-Make your changes
-Add tests if applicable
-Submit a pull request
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests if applicable
+5. Submit a pull request
+
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
@@ -289,6 +279,7 @@ For support and questions:
 Create an issue in the repository
 Check the documentation
 Review the troubleshooting section
+
 Changelog
 v1.0.0
 Initial release
