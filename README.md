@@ -5,58 +5,60 @@ Features
 
 Core Functionality
 
-OLT Management: Add, configure, and monitor ZTE OLT devices
-ONU Management: Configure and manage ONUs with real-time monitoring
-Real-time Monitoring: SNMP-based monitoring with live dashboard
-Configuration Management: Backup and restore OLT configurations
-Alert System: Intelligent alerting for signal quality and device status
-Performance Analytics: Graphs and reports for system performance
-User Management: Role-based access control (Admin, Operator, Viewer)
+* OLT Management: Add, configure, and monitor ZTE OLT devices
+* ONU Management: Configure and manage ONUs with real-time monitoring
+* Real-time Monitoring: SNMP-based monitoring with live dashboard
+* Configuration Management: Backup and restore OLT configurations
+* Alert System: Intelligent alerting for signal quality and device status
+* Performance Analytics: Graphs and reports for system performance
+* User Management: Role-based access control (Admin, Operator, Viewer)
 
 Technical Features
 
-Multi-protocol Support: SNMP, SSH, and Telnet connectivity
-Signal Quality Monitoring: Automatic classification (Good/Warning/Critical)
-Device Auto-discovery: Automatic ONU detection and provisioning
-Historical Data: Performance tracking and trend analysis
-Responsive Design: Mobile-friendly interface
-Dark/Light Theme: Modern UI with theme switching
-Real-time Updates: WebSocket-based live updates
+* Multi-protocol Support: SNMP, SSH, and Telnet connectivity
+* Signal Quality Monitoring: Automatic classification (Good/Warning/Critical)
+* Device Auto-discovery: Automatic ONU detection and provisioning
+* Historical Data: Performance tracking and trend analysis
+* Responsive Design: Mobile-friendly interface
+* Dark/Light Theme: Modern UI with theme switching
+* Real-time Updates: WebSocket-based live updates
 
 Architecture
 
 Backend (FastAPI)
 
-Framework: FastAPI with Python 3.11
-Database: MySQL 8.0 with SQLAlchemy ORM
-Caching: Redis for session management
-Authentication: JWT-based authentication
-Protocols: SNMP (pysnmp), SSH (paramiko), Telnet (telnetlib3)
+* Framework: FastAPI with Python 3.11
+* Database: MySQL 8.0 with SQLAlchemy ORM
+* Caching: Redis for session management
+* Authentication: JWT-based authentication
+* Protocols: SNMP (pysnmp), SSH (paramiko), Telnet (telnetlib3)
 
 Frontend (Vue.js)
 
-Framework: Vue 3 with TypeScript
-UI Library: Element Plus
-Charts: ECharts for performance visualization
-State Management: Pinia
-Build Tool: Vite
+* Framework: Vue 3 with TypeScript
+* UI Library: Element Plus
+* Charts: ECharts for performance visualization
+* State Management: Pinia
+* Build Tool: Vite
 
 Infrastructure
 
-Containerization: Docker and Docker Compose
-Reverse Proxy: Nginx
-Database: MySQL 8.0
-Cache: Redis
+* Containerization: Docker and Docker Compose
+* Reverse Proxy: Nginx
+* Database: MySQL 8.0
+* Cache: Redis
 
 Quick Start
 
 Prerequisites
 
-Docker and Docker Compose
-Git
+* Docker and Docker Compose
+* Git
+
 Installation
 
 1. Clone the repository
+
 <pre>
 git clone <repository-url>
 cd olt-monitor-system
