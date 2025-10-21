@@ -41,50 +41,36 @@ Prerequisites
 Docker and Docker Compose
 Git
 Installation
-'''Clone the repository
-bash
+1. Clone the repository
+<pre>
+git clone <repository-url>
+cd olt-monitor-system
+</pre>
 
-Line Wrapping
-
-Collapse
-
-  git clone <repository-url>
-  cd olt-monitor-system
-  Start the application
-  bash
-
-Line Wrapping
-
-Collapse
-Copy
-1
+2. Start the application
+<pre>
 docker-compose up -d
-Access the application
-Frontend: http://localhost
-API Documentation: http://localhost/api/docs
-Default Login: admin / admin123
+</pre>
+3. Access the application
+   Frontend: http://localhost
+   API Documentation: http://localhost/api/docs
+   Default Login: admin / admin123
+   
 Configuration
-Environment Variables
-Create a .env file in the backend directory:
-
-env
-
-Line Wrapping
-
-'''Collapse
+  Environment Variables
+  Create a .env file in the backend directory:
+<pre>
 DATABASE_URL=mysql+mysqlconnector://olt_user:olt_password_123@mysql:3306/olt_monitor
 REDIS_URL=redis://redis:6379
 SECRET_KEY=your-secret-key-here-change-in-production
 ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=30
+</pre>
+
 OLT Configuration
+
 Add OLT devices through the web interface or API:
-
-json
-
-Line Wrapping
-
-'''Collapse
+<pre>
 {
   "name": "ZTE-C300-01",
   "ip_address": "192.168.1.100",
@@ -94,62 +80,52 @@ Line Wrapping
   "ssh_username": "admin",
   "ssh_password": "admin123"
 }
+</pree>
 
 Usage
+
 Adding OLT Devices
-Navigate to OLT Management
-Click "Add OLT"
-Enter device details and credentials
-Test connection to verify connectivity
-Save the configuration
+
+1. Navigate to OLT Management
+2. Click "Add OLT"
+3. Enter device details and credentials
+4. Test connection to verify connectivity
+5. Save the configuration
+
 Monitoring ONUs
-Select an OLT from the list
-View discovered ONUs in the ONU tab
-Configure ONU parameters (VLAN, bandwidth, etc.)
-Monitor signal quality and performance
+
+1. Select an OLT from the list
+2. View discovered ONUs in the ONU tab
+3. Configure ONU parameters (VLAN, bandwidth, etc.)
+4. Monitor signal quality and performance
+
 Performance Graphs
-Navigate to Performance section
-Select time range and metrics
-View real-time and historical data
-Export graphs for reports
+
+1. Navigate to Performance section
+2. Select time range and metrics
+3. View real-time and historical data
+4. Export graphs for reports
+
 Configuration Backup
-Select OLT device
-Click "Backup Configuration"
-Enter backup name and description
-Download backup file
+
+1. Select OLT device
+2. Click "Backup Configuration"
+3. Enter backup name and description
+4. Download backup file
+
 API Documentation
+
 Authentication
-bash
-
-Line Wrapping
-
-'''Collapse
+<pre>
+# Login
 POST /api/auth/login
 {
   "username": "admin",
   "password": "admin123"
 }
+</pre>
 OLT Management
-bash
-
-Line Wrapping
-
-Collapse
-Copy
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
+<pre>
 # Get all OLTs
 GET /api/olt
 
@@ -164,25 +140,10 @@ POST /api/olt
 
 # Monitor OLT
 POST /api/olt/{id}/monitor
+</pre>
+
 ONU Management
-bash
-
-Line Wrapping
-
-Collapse
-Copy
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
+<pre>
 # Get ONUs
 GET /api/onu?olt_id=1
 
@@ -195,52 +156,38 @@ POST /api/onu/{id}/configure
     "bandwidth_down": 100000
   }
 }
+</pre>
+
+
 Development
+
 Backend Development
-bash
-
-Line Wrapping
-
-Collapse
-Copy
-1
-2
-3
+<pre>
 cd backend
 pip install -r requirements.txt
 uvicorn main:app --reload
+</pre>
+
 Frontend Development
-bash
-
-Line Wrapping
-
-Collapse
-Copy
-1
-2
-3
+<pre>
 cd frontend
 npm install
 npm run dev
+</pre>
 Database Migrations
-bash
-
-Line Wrapping
-
-Collapse
-Copy
-1
-2
-3
+<pre>
 cd backend
 alembic revision --autogenerate -m "Initial migration"
 alembic upgrade head
+</pre>
+
 Supported OLT Models
+
 ZTE C300
-Version: v2.1, v2.2, v3.0
-PON Types: GPON, EPON
-Max PON Ports: 16
-Max ONUs per PON: 128
+a. Version: v2.1, v2.2, v3.0
+b. PON Types: GPON, EPON
+c. Max PON Ports: 16
+d. Max ONUs per PON: 128
 ZTE C320
 Version: v3.0, v3.1, v3.2
 PON Types: GPON, XG-PON
