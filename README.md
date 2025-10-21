@@ -182,74 +182,105 @@ alembic upgrade head
 </pre>
 
 Supported OLT Models
+
 ZTE C300
-Version: v2.1, v2.2, v3.0
-PON Types: GPON, EPON
-Max PON Ports: 16
-Max ONUs per PON: 128
+
+1. Version: v2.1, v2.2, v3.0
+2. PON Types: GPON, EPON
+3. Max PON Ports: 16
+4. Max ONUs per PON: 128
+
 ZTE C320
-Version: v3.0, v3.1, v3.2
-PON Types: GPON, XG-PON
-Max PON Ports: 24
-Max ONUs per PON: 256
+
+1. Version: v3.0, v3.1, v3.2
+2. PON Types: GPON, XG-PON
+3. Max PON Ports: 24
+4. Max ONUs per PON: 256
+
 ZTE C600
-Version: v1.5, v2.0
-PON Types: GPON, XGS-PON
-Max PON Ports: 32
-Max ONUs per PON: 512
+
+1. Version: v1.5, v2.0
+2. PON Types: GPON, XGS-PON
+3. Max PON Ports: 32
+4. Max ONUs per PON: 512
+
 Monitoring Metrics
+
 OLT Metrics
-CPU Usage
-Memory Usage
-Temperature
-Uptime
-Interface Statistics
-Error Rates
+
+1. CPU Usage
+2. Memory Usage
+3. Temperature
+4. Uptime
+5. Interface Statistics
+6. Error Rates
+
+
 ONU Metrics
-RX/TX Power
-Signal Quality
-Traffic Statistics
-Error Rates
-Distance/OLT
+
+1. RX/TX Power
+2. Signal Quality
+3. Traffic Statistics
+4. Error Rates
+5. Distance/OLT
+
 Alert Types
+
 Signal Quality Alerts
-Low RX Power (< -27 dBm)
-High RX Power (> -6 dBm)
-Signal Loss
+
+1. Low RX Power (< -27 dBm)
+2. High RX Power (> -6 dBm)
+3. Signal Loss
+
 Device Status Alerts
-OLT Offline
-ONU Offline
-High CPU Usage (> 80%)
-High Memory Usage (> 80%)
-High Temperature (> 70°C)
+
+1. OLT Offline
+2. ONU Offline
+3. High CPU Usage (> 80%)
+4. High Memory Usage (> 80%)
+5. High Temperature (> 70°C)
+
 Security Features
+
 Authentication
-JWT-based authentication
-Role-based access control
-Session management
-Password hashing
+
+1. JWT-based authentication
+2. Role-based access control
+3. Session management
+4. Password hashing
+
 Network Security
-HTTPS support
-CORS configuration
-Rate limiting
-Input validation
+
+1. HTTPS support
+2. CORS configuration
+3. Rate limiting
+4. Input validation
+
 Troubleshooting
+
 Common Issues
+
 OLT Connection Failed
-Verify IP address and network connectivity
-Check SNMP community string
-Verify SSH/Telnet credentials
-Check firewall settings
+
+1. Verify IP address and network connectivity
+2. Check SNMP community string
+3. Verify SSH/Telnet credentials
+4. Check firewall settings
+
 ONU Not Discovered
-Ensure OLT is online
-Check PON port status
-Verify ONU is powered and connected
-Check optical signal levels
+
+1. Ensure OLT is online
+2. Check PON port status
+3. Verify ONU is powered and connected
+4. Check optical signal levels
+
 High Memory Usage
-Restart monitoring services
-Check database connections
-Review monitoring intervals
-Scale resources if needed
+
+1. Restart monitoring services
+2. Check database connections
+3. Review monitoring intervals
+4. Scale resources if needed
+
 Logs
 <pre>
 # Application logs
