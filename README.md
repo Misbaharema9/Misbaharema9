@@ -80,7 +80,7 @@ Add OLT devices through the web interface or API:
   "ssh_username": "admin",
   "ssh_password": "admin123"
 }
-</pree>
+</pre>
 
 Usage
 
